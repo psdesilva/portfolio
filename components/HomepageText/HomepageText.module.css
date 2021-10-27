@@ -1,0 +1,53 @@
+.container {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ux {
+    align-items: flex-start;
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: all 0.8s ease-out 1s;
+}
+
+.fe {
+    transform: translateX(10%);
+    opacity: 0;
+    align-items: flex-end;
+    text-align: right;
+    transition: all 0.8s ease-out 1s;
+}
+
+.loaded {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ux h1 {
+    color: var(--main-dark-color);
+}
+
+.fe h1 {
+    color: var(--main-light-color);
+}
+
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.small {
+    line-height: 0.3;
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+
+.large {
+    font-size: clamp(1rem, 5vw, 5rem);
+}
+
+.container p {
+    font-family: 'Roboto Mono', monospace;
+    color: #888888;
+}

@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  --main-dark-color: #232323;
+  --main-light-color: #F4F4F4;
+  --main-green-color: #49B42F;
+  --main-grey-color: #888888;
+
+  --monospace-font: 'Roboto Mono', monospace;
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+
+  background-color: var(--main-light-color);
 }
 
 a {
@@ -12,5 +24,7 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }

@@ -1,0 +1,21 @@
+.large {
+    max-width: 300px;
+    background-color: transparent;
+    border: 2px solid #49B42F;
+    padding: 10px;
+    color: #49B42F;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.dark:hover {
+    background-color: #49B42F;
+    color: #232323;
+}
+
+.light:hover {
+    background-color: #49B42F;
+    color: #F4F4F4;
+}
