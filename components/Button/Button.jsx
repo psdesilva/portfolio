@@ -1,8 +1,8 @@
 import style from './Button.module.css'
 
-const Button = ({ type, text, backgroundColor }) => {
+const Button = ({ type, text, backgroundColor, submitBtn }) => {
     return (
-        <button className={`${type === "small" ? style.small : style.large} ${backgroundColor === "dark" ? style.dark : style.light}`}>
+        <button type={submitBtn ? "submit" : ''} className={`${type === "small" ? style.small : style.large} ${backgroundColor === "dark" ? style.dark : style.light}`}>
             {text}
         </button>
     )

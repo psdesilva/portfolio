@@ -25,6 +25,7 @@
     transform: translate(-50%, -50%);
     border: 5px solid var(--main-dark-color);
     background-color: var(--main-light-color);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -159,6 +160,8 @@
     color: var(--main-green-color);
     opacity: 3%;
     font-family: var(--monospace-font);
+    letter-spacing: -10px;
+    font-weight: 300;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;

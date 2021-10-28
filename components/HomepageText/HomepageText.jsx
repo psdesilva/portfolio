@@ -9,8 +9,8 @@ const HomepageText = ({ type, loading }) => {
                 <h1 className={style.small}>{type === 'ux' ? 'UX' : 'Front-end'}</h1>
                 <h1 className={style.large}>{type === 'ux' ? 'Research' : 'Interfaces'}</h1>
             </div>
-            <p>{type === 'ux' ? `I'm dedicated to improving the usability of user interfaces.` : 'I enjoy building user interfaces using HTML, CSS, Javascript, and React.'}</p>
-            <Button type="large" text={type === 'ux' ? 'UX Porfolio' : 'Development Portfolio'} backgroundColor={type === 'ux' ? 'light' : 'dark'}/>
+            <p>{type === 'ux' ? `I'm dedicated to improving the usability of user interfaces.` : 'I enjoy building web interfaces using HTML, CSS, Vanilla JS, and React.'}</p>
+            <Button type="large" text={type === 'ux' ? 'UX Porfolio' : 'Web Dev Portfolio'} backgroundColor={type === 'ux' ? 'light' : 'dark'}/>
         </div>
     )
 }

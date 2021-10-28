@@ -1,4 +1,5 @@
 .large {
+    min-width: 150px;
     max-width: 300px;
     background-color: transparent;
     border: 2px solid #49B42F;
@@ -10,12 +11,14 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-.dark:hover {
+.dark:hover .dark:focus {
+    outline:none;
     background-color: #49B42F;
     color: #232323;
 }
 
-.light:hover {
+.light:hover, .light:focus {
+    outline:none;
     background-color: #49B42F;
     color: #F4F4F4;
 }
