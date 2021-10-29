@@ -1,17 +1,27 @@
 .large {
     min-width: 150px;
     max-width: 300px;
-    background-color: transparent;
+    /* background-color: transparent; */
     border: 2px solid #49B42F;
+    /* border: none; */
     padding: 10px;
-    color: #49B42F;
+    /* color: #49B42F; */
+    background-color: #49B42F;
+    color: #F4F4F4;
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.3s ease;
     font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
 }
 
-.dark:hover .dark:focus {
+.large:hover, .large:focus-visible {
+    background-color: #54974300;
+    color: #49B42F;
+    
+}
+
+/* .dark:hover .dark:focus {
     outline:none;
     background-color: #49B42F;
     color: #232323;
@@ -21,4 +31,4 @@
     outline:none;
     background-color: #49B42F;
     color: #F4F4F4;
-}
+} */

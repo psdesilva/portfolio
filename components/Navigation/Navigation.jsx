@@ -34,8 +34,8 @@ const Navigation = () => {
                             <div className={style.portfolioContainer}>
                                 <button onClick={() => setSubMenuOpen(!subMenuOpen)} className={style.portfolio}>Portfolio <FaChevronRight className={`${style.chevron} ${subMenuOpen && style.rotated}`}/></button>
                                 <div className={`${style.subMenu} ${subMenuOpen ? style.subMenuOpen : ''}`}>
-                                    <Link href="#"><a>Web Development</a></Link>
-                                    <Link href="#"><a>User Experience</a></Link>
+                                    <Link href="/portfolio/web"><a>Web Development</a></Link>
+                                    <Link href="/portfolio/ux"><a>User Experience</a></Link>
                                 </div>
                             </div>
                             <Link href="#"><a>Resume</a></Link>

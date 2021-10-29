@@ -17,7 +17,7 @@ export default function About() {
         </header>
         <main className={style.container}>
             <section className={style.topText}>
-                <p className={`${style.tagline} ${loading ? '' : style.taglineLoaded}`}>Hey there! My name is Priyanka and I'm a front-end developer with a background in UX.</p>
+                <p className={`${style.tagline} ${loading ? '' : style.taglineLoaded}`}>Hey there! My name is Priyanka and I'm a front-end developer with a background in UX Research.</p>
                 <p className={`${style.paragraphTop} ${loading ? '' : style.paragraphLoaded}`}>{`After finishing O/Ls, I struggled to find something I genuinely enjoyed doing. I dabbled in Aerospace Engineering and Computer Science before I finally earned a Cognitive Science Bachelor's with a minor in Psychology.`}</p>
                 <p className={`${style.paragraphTop} ${loading ? '' : style.paragraphLoaded}`}>{`Afterwards, I was encouraged to pursue a Master's degree, and was recommended the Human-Computer Interaction program. Two and a half years later, I was a Master's degree holder.`}</p>
             </section>

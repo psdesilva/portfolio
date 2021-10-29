@@ -32,7 +32,7 @@ export default function Contact() {
                 </div>
                 <div className={style.inputGroup}>
                   <label htmlFor="email">E-mail</label>
-                  <input id="email" type="text" placeholder="Your E-mail"name="email" className={style.inputField} required/>
+                  <input id="email" type="email" placeholder="Your E-mail"name="email" className={style.inputField} required/>
                 </div>
                 <div className={style.inputGroup}>
                   <label htmlFor="subject">Subject</label>
