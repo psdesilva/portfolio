@@ -27,9 +27,7 @@ const ProjectCard = ({ title, description, img, web, url1, url2, className }) =>
                 layout="fill"
                 objectFit="cover"
                 className={style.image}
-                quality="1"
-                // placeholder="blur"
-                // blurDataURL={img}
+                quality="50" 
             />
         </div>
     )

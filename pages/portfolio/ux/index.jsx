@@ -4,7 +4,7 @@ import projects from './ProjectList'
 import style from './Ux.module.css'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 
-export default function Contact() {
+export default function Ux() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -36,7 +36,7 @@ export default function Contact() {
             </div>
           </section>
           <section className={style.projectList}>
-            {projects.map((project, index) => <ProjectCard key={index} title={project.title} description={project.description} img={project.img} url1={project.linkToProject} className={`${style[`project-${index}`]} ${loading ? '' : style.loaded}`}/>)}
+            {projects.map((project, index) => <ProjectCard key={index} title={project.title} description={project.description} img={project.img} url1={project.linkToProject} thumb={project.thumb} className={`${style[`project-${index}`]} ${loading ? '' : style.loaded}`}/>)}
           </section>
         </main>
         <footer className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>

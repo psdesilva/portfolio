@@ -7,13 +7,13 @@ const projects = [{
 },
 {
     title: "COVID19 - LK",
-    description: "Dashboard made with Vanilla JS and ApexCharts.js using API data from HPB Sri Lanka and Twitter API.",
+    description: "Made with Vanilla JS and ApexCharts.js using API data from HPB Sri Lanka and Twitter API. Uses Express.js and Socket.io for the backend",
     img: "/Projects/web/COVID19LK.JPG",
     github: "https://github.com/psdesilva/covid-19-lk",
     demo: "https://afternoon-taiga-79137.herokuapp.com"
 },
 {
-    title: "Portfolio",
+    title: "Portfolio v2",
     description: "This portfolio made using Next.js.",
     img: "/Projects/web/port.JPG",
     github: "https://github.com/psdesilva/portfolio",
@@ -25,6 +25,13 @@ const projects = [{
     img: "/Projects/web/TicTacToe.JPG",
     github: "https://github.com/psdesilva/tic-tac-toe",
     demo: "https://react-prac-tic-tac-toe.herokuapp.com" 
+},
+{
+    title: "Portfolio v1",
+    description: "First real website I created, to portray my UX Projects. Made using HTML, CSS and a tiny bit of Vanilla JS. Hosted on free host as my previous domain and host expired.",
+    img: "/Projects/web/portv1.JPG",
+    github: "#",
+    demo: "https://priyanka-de-silva-portfolio-v1.000webhostapp.com/"
 },
 {
     title: "To-do List",

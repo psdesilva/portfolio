@@ -4,7 +4,7 @@ import style from './Web.module.css'
 import projects from './ProjectList'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 
-export default function Contact() {
+export default function Web() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -18,21 +18,29 @@ export default function Contact() {
         </header>
         <main className={style.container}>
           <section className={style.info}>
-              <div className={`${style.infoCategory} ${loading ? '' : style.loaded}`}>
-                <p className={style.infoCategoryType}>Skills:</p>
-                <ul>
-                  <li>User Testing</li>
-                  <li>Prototyping</li>
-                  <li>Theoretical Usability Analysis</li>
-                </ul>
-              </div>
-              <div className={`${style.infoCategory} ${loading ? '' : style.loaded}`}>
-                <p className={style.infoCategoryType}>Tools:</p>
-                <ul>
-                  <li>Adobe Xd</li>
-                  <li>Hotjar</li>
-                  <li>Axure RP</li>
-                </ul>
+            <div className={`${style.infoCategory} ${loading ? '' : style.loaded}`}>
+              <p className={style.infoCategoryType}>Languages:</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <div className={`${style.infoCategory} ${loading ? '' : style.loaded}`}>
+              <p className={style.infoCategoryType}>{`Frameworks & Pre-processors:`}</p>
+              <ul>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <div className={`${style.infoCategory} ${loading ? '' : style.loaded}`}>
+              <p className={style.infoCategoryType}>Tools:</p>
+              <ul>
+                <li>VS Code</li>
+                <li>GIT</li>
+                <li>NPM</li>
+              </ul>
             </div>
           </section>
           <section className={style.projectList}>
