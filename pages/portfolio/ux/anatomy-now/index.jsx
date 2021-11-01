@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { SiAdobexd } from 'react-icons/si'
-import anatomyNow from './WriteUp';
+import anatomyNow from '../../../../writeups/ANWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
 import style from '../../../../styles/Project.module.css'
 

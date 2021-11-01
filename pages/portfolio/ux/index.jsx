@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { SiAdobexd } from 'react-icons/si'
-import projects from './ProjectList'
+import projects from '../../../projectlists/UXProjectList'
 import style from './Ux.module.css'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 

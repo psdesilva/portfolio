@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { SiAdobexd } from 'react-icons/si'
-import silverLining from './WriteUp';
+import silverLining from '../../../../writeups/SLWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
 import style from '../../../../styles/Project.module.css'
 

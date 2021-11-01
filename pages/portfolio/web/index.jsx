@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FaReact } from 'react-icons/fa'
 import style from './Web.module.css'
-import projects from './ProjectList'
+import projects from '../../../projectlists/WebProjectList'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 
 export default function Web() {

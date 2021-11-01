@@ -30,18 +30,6 @@
     flex-grow: 0.5;
 }
 
-.image > div {
-    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); */
-    /* position: unset !important; */
-}
-
-.actualImage {
-    /* object-fit: contain;
-    width: 100% !important;
-    position: relative !important;
-    height: unset !important; */
-}
-
 .description {
     opacity: 0.7;
     letter-spacing: normal;
