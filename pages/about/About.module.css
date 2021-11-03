@@ -161,6 +161,16 @@
     transition: all 1s ease-out 2.5s;
 }
 
+@supports not (aspect-ratio: auto) { 
+    .topImage {
+        height: 400px;
+    }
+
+    .bottomImage {
+        height: 300px;
+    }
+}
+
 .bottomImageLoaded {
     transform: translate(-50px, 0px);
     opacity: 1;
