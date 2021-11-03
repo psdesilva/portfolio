@@ -90,7 +90,9 @@
     opacity: 0;
     transform: translateX(-20px);
     transition: all 1s ease-out 2s;
+    line-height: 1.5rem;
     letter-spacing: 0.5px;
+    word-spacing: 1px;
 }
 
 .paragraphBtm {
@@ -98,7 +100,9 @@
     opacity: 0;
     transform: translateX(20px);
     transition: all 1s ease-out 2s;
+    line-height: 1.5rem;
     letter-spacing: 0.5px;
+    word-spacing: 1px;
 }
 
 .paragraphLoaded {
@@ -139,7 +143,6 @@
     opacity: 0;
     bottom: 45%;
     right:0;
-
     transition: all 1s ease-out 2.5s;
 }
 
@@ -161,4 +164,75 @@
 .bottomImageLoaded {
     transform: translate(-50px, 0px);
     opacity: 1;
+}
+
+@media screen and (max-width: 799px) {
+    .page header {
+        font-size: clamp(5rem, 13vw, 20rem);
+    }
+
+    .page footer {
+        font-size: clamp(15rem, 30vw, 30rem);
+        bottom: -10%;
+        right: 0%;
+    }
+
+    .container {
+        max-width: 90vw;
+    }
+
+    .container section {
+        width: 100%;
+    }
+
+    .topImage {
+        transition: all 1s ease-out 2s;
+        transform: translateX(-10px);
+    }
+
+    .topImageLoaded {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .tagline {
+        transform: translateX(-10px);
+        font-size: 1.2rem;
+    }
+
+    .taglineLoaded {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .bottomImage {
+        transition: all 1s ease-out 3s;
+        transform: translateX(-10px);
+    }
+
+    .bottomImageLoaded {
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+    .paragraphTop {
+        transform: translateX(-10px);
+        transition: all 1s ease-out 2.5s;
+    }
+    
+    .paragraphBtm {
+        transform: translateX(-10px);
+        transition: all 1s ease-out 3.5s;
+    }
+
+    .paragraphLoaded {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .container aside {
+        position: relative;
+        width: 100%;
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.185) ;
+    }
 }

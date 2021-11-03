@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { SiAdobexd } from 'react-icons/si'
+import { BiPlusMedical } from 'react-icons/bi'
 import anatomyNow from '../../../../writeups/ANWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
 import style from '../../../../styles/Project.module.css'
@@ -63,7 +63,7 @@ export default function AnatomyNow() {
           </section>
         </main>
         <footer className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
-            <h1><SiAdobexd/></h1>
+            <h1><BiPlusMedical/></h1>
         </footer>
       </div>
     )

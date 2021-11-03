@@ -89,3 +89,22 @@
     position: absolute;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 799px) {
+    .container {
+        max-width: 80vw;
+    }
+
+    .info {
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 95%;
+        height: 95%;
+    }
+
+    .buttonContainer {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}

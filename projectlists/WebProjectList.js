@@ -30,7 +30,7 @@ const projects = [{
     title: "Portfolio v1",
     description: "First real website I created, to portray my UX Projects. Made using HTML, CSS and a tiny bit of Vanilla JS. Hosted on free host as my previous domain and host expired.",
     img: "/Projects/web/portv1.JPG",
-    github: "#",
+    github: "https://github.com/psdesilva/portfolio-old",
     demo: "https://priyanka-de-silva-portfolio-v1.000webhostapp.com/"
 },
 {

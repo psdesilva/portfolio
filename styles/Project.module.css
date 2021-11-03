@@ -38,6 +38,13 @@
     color:var(--main-dark-color)
 }
 
+.imageContainer {
+    position: relative;
+    margin-bottom: 25%;
+    width: clamp(23rem, 35vw, 50rem);
+    aspect-ratio: 2 / 1;
+}
+
 .background {
     opacity: 0;
     transition: opacity 1s ease-out .5s;
@@ -71,20 +78,48 @@
 .section p, .section ul {
     font-family: var(--paragraph-font);
     line-height: 1.5rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
     color: var(--main-dark-color);
 }
 
-.section ul {
+.quoteContainer {
+    align-self: center;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #88888828;
+}
+
+.quoteText {
+    font-style: italic;
+}
+
+.quotee {
+    font-weight: bold;
+    text-align: right;
+}
+
+.section ul {   
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.section li {
+.section ul li {
     list-style: none;
+}
+
+.section ol {
+    column-count: 2;
+    list-style: none;
+    font-family: var(--paragraph-font);
+    color: var(--main-dark-color);
+    line-height: 30px;
 }
 
 .section1, .section2, .section3, .section4, .section5, .section6 {

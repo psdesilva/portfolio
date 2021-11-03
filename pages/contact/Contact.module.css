@@ -76,6 +76,11 @@
 
 .details a p {
     color: var(--main-dark-color);
+    transition: all 0.3s ease;
+}
+
+.details a p:hover {
+    color: var(--main-green-color);
 }
 
 .detail1 {
@@ -90,6 +95,22 @@
     transition: all 1s ease-out 2s;
 }
 
+.messageStatus {
+    position: absolute;
+    top: -8%;
+    animation: fadeIn 0.5s ease-out; 
+    color: var(--main-green-color)
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .formContainer {
     /* border: 1px solid blue; */
     display: flex;
@@ -102,7 +123,7 @@
     font-size: 1.5rem;
     opacity: 0;
     transform: translateX(-10px);
-    transition: all 1s ease-out 3s;
+    transition: all 1s ease-out 2.5s;
 }
 
 .form {
@@ -112,7 +133,8 @@
     justify-content: space-between;
     opacity: 0;
     transform: translateX(10px);
-    transition: all 1s ease-out 3s;
+    transition: all 1s ease-out 2.5s;
+    position: relative;
 }
 
 .inputGroup {
@@ -142,7 +164,92 @@
     height: 150px;
 }
 
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.ldsRing {
+    display: none;
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1 /1;
+}
+
+.loadingRing {
+    display: block;
+}
+
+.ldsRing div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    height: 70%;
+    aspect-ratio: 1 /1;
+    margin: 8px;
+    border: 5px solid rgb(49, 190, 61);
+    border-radius: 50%;
+    animation: ldsRing 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #888888 transparent transparent transparent;
+}
+
+.ldsRing div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.ldsRing div:nth-child(2) {
+    animation-delay: -0.3s; 
+}
+
+.ldsRing div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes ldsRing {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+
 .detailLoaded {
     opacity: 1;
     transform: translateX(0px);
+}
+
+@media screen and (max-width: 799px) {
+    .page header {
+        font-size: clamp(5rem, 13vw, 20rem);
+    }
+
+    .page footer {
+        font-size: clamp(15rem, 30vw, 30rem);
+        bottom: -10%;
+        right: 0%;
+    }
+
+    .container {
+        max-width: 90vw;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inputGroup input, .inputGroup textarea {
+        min-width: 100%;
+    }
+
+    .buttonContainer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .details a, .formTitle {
+        font-size: 1.2rem;
+    }
 }

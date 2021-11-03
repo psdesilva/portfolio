@@ -44,10 +44,10 @@ const Navigation = () => {
                         <footer className={style.footerContainer}>
                             <p>Let's connect!</p>
                             <div className={style.connectContainer}>
-                                <Link href="#"><a><FaGithub /></a></Link>
-                                <Link href="#"><a><FaFacebookF /></a></Link>
-                                <Link href="#"><a><FaLinkedinIn /></a></Link>
-                                <Link href="#"><a><FaEnvelope /></a></Link>
+                                <a href="https://github.com/psdesilva" target="_blank"><FaGithub /></a>
+                                <a href="https://www.facebook.com/chknrss" target="_blank"><FaFacebookF /></a>
+                                <a href="#"><FaLinkedinIn /></a>
+                                <a href="mailto:prnkdslv@gmail.com" target="_blank"><FaEnvelope /></a>
                             </div>
                         </footer>
                     </div>

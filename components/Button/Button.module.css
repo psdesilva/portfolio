@@ -21,6 +21,13 @@
     
 }
 
+@media screen and (max-width: 799px) {
+    .large {
+        min-width: 90px;
+        padding: 5px;
+    }
+}
+
 /* .dark:hover .dark:focus {
     outline:none;
     background-color: #49B42F;

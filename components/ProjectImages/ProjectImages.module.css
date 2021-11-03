@@ -27,7 +27,7 @@
     position: relative;
     /* flex-grow: 1;
     width: 70vw; */
-    flex-grow: 0.5;
+    flex-grow: 1;
 }
 
 .description {
