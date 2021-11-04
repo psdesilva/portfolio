@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import useMediaQuery from '../hooks/MediaQuery'
 import HomepageText from '../components/HomepageText/HomepageText'
 import { FaUserAlt } from 'react-icons/fa'
 import { AiOutlineArrowRight } from 'react-icons/ai'
@@ -15,6 +16,8 @@ export default function Home() {
     setLoading(false)
   }, [])
 
+  const isBreakPoint = useMediaQuery(799);
+
   return (
     <div className={style.page}>
       <div className={`${style.container} ${style.ux}`}>
@@ -28,14 +31,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={`${style.nameCard} ${loading ? '' : style.opaque}`}>
-        <div className={style.image}></div>
-        <p>{`I'm`}</p>
-        <div className={style.title}>
-          <h1 className={style.small}>Priyanka</h1>
-          <h1 className={style.large}>de Silva</h1>
+      {isBreakPoint ? 
+        <div className={`${style.nameCard} ${loading ? '' : style.opaque}`}>
+          <h1 className={style.mobileSmall}>I'm</h1>
+          <h1 className={style.mobileLarge}>Priyanka de Silva</h1>
+        </div> 
+        :
+        <div className={`${style.nameCard} ${loading ? '' : style.opaque}`}>
+          <div className={style.image}></div>
+          <p>{`I'm`}</p>
+          <div className={style.title}>
+            <h1 className={style.small}>Priyanka</h1>
+            <h1 className={style.large}>de Silva</h1>
+          </div>
         </div>
-      </div>
+      }
       <div className={`${style.container} ${style.fe}`}>
         <div className={style.scrollContainer}>
           <div className={style.scrollFE}>

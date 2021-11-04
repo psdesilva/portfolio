@@ -143,6 +143,16 @@
         padding: 30px;
     }
 
+    .page header {
+        font-size: clamp(5rem, 13vw, 20rem);
+    }
+
+    .page footer {
+        font-size: clamp(15rem, 30vw, 30rem);
+        bottom: -10%;
+        right: 0%;
+    }
+
     .container {
         width: 90vw;
     }
