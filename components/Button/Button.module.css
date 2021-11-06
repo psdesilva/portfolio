@@ -13,6 +13,7 @@
     transition: all 0.3s ease;
     font-family: 'Roboto Mono', monospace;
     cursor: pointer;
+    outline-color: #49B42F;
 }
 
 .large:hover, .large:focus-visible {
@@ -27,15 +28,3 @@
         padding: 5px;
     }
 }
-
-/* .dark:hover .dark:focus {
-    outline:none;
-    background-color: #49B42F;
-    color: #232323;
-}
-
-.light:hover, .light:focus {
-    outline:none;
-    background-color: #49B42F;
-    color: #F4F4F4;
-} */

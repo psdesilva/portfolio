@@ -17,7 +17,6 @@ const ProjectImages = ({ imageArray, height, description }) => {
                             objectFit="contain"
                             objectPosition="center center"
                             className={style.actualImage}
-                            unoptimized="true"
                         />
                     </div>
                 ))}

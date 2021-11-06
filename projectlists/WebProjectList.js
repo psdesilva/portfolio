@@ -28,15 +28,15 @@ const projects = [{
 },
 {
     title: "Portfolio v1",
-    description: "First real website I created, to portray my UX Projects. Made using HTML, CSS and a tiny bit of Vanilla JS. Hosted on free host as my previous domain and host expired.",
+    description: "First portfolio I created to list my UX Projects. Made using HTML, CSS and a tiny bit of Vanilla JS. Hosted on free host as my previous domain and host expired.",
     img: "/Projects/web/portv1.JPG",
     github: "https://github.com/psdesilva/portfolio-old",
     demo: "https://priyanka-de-silva-portfolio-v1.000webhostapp.com/"
 },
 {
     title: "To-do List",
-    description: "Basic to-do list which stores info in Local Storage, created using HTML, CSS and Vanilla JS.",
-    img: "/Projects/web/209591251.jpg",
+    description: "Basic to-do list which stores data in local storage, created using HTML, CSS and Vanilla JS.",
+    img: "/Projects/web/209591251231231231.jpg",
     github: "https://github.com/psdesilva/to-do-list",
     demo: "#" 
 }

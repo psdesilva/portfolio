@@ -19,14 +19,6 @@ const Navigation = () => {
             <button onClick={() => setOpenMenu(!openMenu)} className={style.menuButton}><AiOutlineMenu /></button>
             <div className={style.navMenu}>
                 <nav className={`${style.container} ${openMenu ? style.open : ''}`}>
-                    {/* <div className={style.logoContainer}>
-                        <Image 
-                            src="/logo.svg"
-                            alt="logo"
-                            layout="fill"
-                            objectFit="contain"
-                        />
-                    </div> */}
                     <div className={style.content}>
                         <main className={style.navContainer}>
                             <Link href="/"><a className={checkCurrentPage('/')}>Home</a></Link>
@@ -34,11 +26,11 @@ const Navigation = () => {
                             <div className={style.portfolioContainer}>
                                 <button onClick={() => setSubMenuOpen(!subMenuOpen)} className={style.portfolio}>Portfolio <FaChevronRight className={`${style.chevron} ${subMenuOpen && style.rotated}`}/></button>
                                 <div className={`${style.subMenu} ${subMenuOpen ? style.subMenuOpen : ''}`}>
-                                    <Link href="/portfolio/web"><a>Web Development</a></Link>
-                                    <Link href="/portfolio/ux"><a>User Experience</a></Link>
+                                    <Link href="/portfolio/web"><a className={checkCurrentPage('/portfolio/web')}>Web Development</a></Link>
+                                    <Link href="/portfolio/ux"><a className={checkCurrentPage('/portfolio/ux')}>User Experience</a></Link>
                                 </div>
                             </div>
-                            <Link href="#"><a>Resume</a></Link>
+                            <a href="/Resume-final.pdf" target="_blank">Resume</a>
                             <Link href="/contact"><a className={checkCurrentPage('/contact')}>Contact</a></Link>
                         </main>
                         <footer className={style.footerContainer}>

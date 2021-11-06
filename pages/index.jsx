@@ -39,7 +39,7 @@ export default function Home() {
         :
         <div className={`${style.nameCard} ${loading ? '' : style.opaque}`}>
           <div className={style.image}></div>
-          <p>{`I'm`}</p>
+          <p>{`Hello, I'm`}</p>
           <div className={style.title}>
             <h1 className={style.small}>Priyanka</h1>
             <h1 className={style.large}>de Silva</h1>
