@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import checkCurrentPage from './CheckCurrentPage'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose } from 'react-icons/ai'
 import { FaGithub } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
@@ -16,7 +17,7 @@ const Navigation = () => {
 
     return (
         <>
-            <button onClick={() => setOpenMenu(!openMenu)} className={style.menuButton}><AiOutlineMenu /></button>
+            <button onClick={() => setOpenMenu(!openMenu)} className={style.menuButton}>{openMenu ? <AiOutlineClose/> :  <AiOutlineMenu />}</button>
             <div className={style.navMenu}>
                 <nav className={`${style.container} ${openMenu ? style.open : ''}`}>
                     <div className={style.content}>

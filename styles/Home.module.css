@@ -267,8 +267,4 @@
     .title {
         display: flex;
     }
-
-    .nameCard p {
-        font-size: 0.8rem;
-    }
 }

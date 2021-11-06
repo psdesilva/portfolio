@@ -18,7 +18,7 @@ const ProjectCard = ({ title, description, img, web, url1, url2, className }) =>
                 { web ? 
                     <div className={style.buttonContainer}>
                         <a href={url1} target="_blank"><Button type="large" text="Github"/></a>
-                        <a href={url2} target="_blank"><Button type="large" text="Demo"/></a>
+                        {url2 === "#" ? '' : <a href={url2} target="_blank"><Button type="large" text="Demo"/></a>}
                     </div> :
                     <div className={style.buttonContainer}>
                         <Link href={url1}><a><Button type="large" text="Case Study"/></a></Link>

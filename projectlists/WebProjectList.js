@@ -15,14 +15,14 @@ const projects = [{
 {
     title: "Portfolio v2",
     description: "This portfolio made using Next.js.",
-    img: "/Projects/web/port.JPG",
+    img: "/Projects/web/Portv2.jpg",
     github: "https://github.com/psdesilva/portfolio",
     demo: "#" 
 },
 {
     title: "Tic Tac Toe",
     description: "Basic Tic-Tac-Toe game which was my first project created using React.",
-    img: "/Projects/web/TicTacToe1.JPG",
+    img: "/Projects/web/TicTacToenew.JPG",
     github: "https://github.com/psdesilva/tic-tac-toe",
     demo: "https://react-prac-tic-tac-toe.herokuapp.com" 
 },
@@ -36,9 +36,9 @@ const projects = [{
 {
     title: "To-do List",
     description: "Basic to-do list which stores data in local storage, created using HTML, CSS and Vanilla JS.",
-    img: "/Projects/web/209591251231231231.jpg",
+    img: "/Projects/web/todo1.jpg",
     github: "https://github.com/psdesilva/to-do-list",
-    demo: "#" 
+    demo: "https://psdesilva-to-do-list.000webhostapp.com/" 
 }
 ]
 

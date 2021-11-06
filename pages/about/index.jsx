@@ -27,7 +27,7 @@ export default function About() {
                         objectPosition="center center"
                     />
                 </aside>
-                <p className={`${style.paragraphTop} ${loading ? '' : style.paragraphLoaded}`}>{`After finishing O/Ls, I struggled to find something I genuinely enjoyed doing. I dabbled in Aerospace Engineering and Computer Science before I finally earned a Cognitive Science Bachelor's with a minor in Psychology.`}</p>
+                <p className={`${style.paragraphTop} ${loading ? '' : style.paragraphLoaded}`}>{`After finishing O/Ls, I struggled to find something I genuinely enjoyed doing. I dabbled in Aerospace Engineering and Computer Science before I finally earned a Cognitive Science Bachelor's degree with a minor in Psychology.`}</p>
                 <p className={`${style.paragraphTop} ${loading ? '' : style.paragraphLoaded}`}>{`Afterwards, I was encouraged to pursue a Master's degree, and was recommended the Human-Computer Interaction program. Two and a half years later, I was a Master's degree holder.`}</p>
             </section>
             <aside className={`${style.bottomImage} ${loading ? '' : style.bottomImageLoaded}`}>
