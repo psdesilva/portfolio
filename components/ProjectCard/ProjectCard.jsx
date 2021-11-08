@@ -7,8 +7,6 @@ import style from './ProjectCard.module.css'
 
 
 const ProjectCard = ({ title, description, img, web, url1, url2, className }) => {
-    // const isBreakPoint = useMediaQuery(799)
-
     return (
         <div className={`${style.container} ${className}`}>
             <div className={style.overlay}></div>

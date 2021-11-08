@@ -43,7 +43,7 @@
     background-size: 120%;
     background-position: center center;
     top: -35%;
-    right: -10%;
+    right: -8%;
     position: absolute;
     height: 80%;
     aspect-ratio: 1 /1;
@@ -71,11 +71,9 @@
 
 .ux {
     position: relative;
-    /* background-color: #232323; */
     background-color: var(--main-light-color);
     display: flex;
     flex-direction: column;
-    /* background-image: linear-gradient(to bottom right, #232323 , #3b3b3b ); */
 }
 
 .ux .scrollContainer {
@@ -84,16 +82,19 @@
     position: absolute;
     bottom: 5%;
     left: 0;
+    z-index: 2;
 }
 
 .scrollUX {
     white-space: nowrap;
     display: flex;
+    z-index: 2;
 }
 
 .scrollUX div {
     display: flex;
     animation: scrollTextLeft 35s infinite linear;
+    z-index: 2;
 }
 
 .scrollUX p {
@@ -115,10 +116,6 @@
 }
 
 .scrollFE {
-    /* align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%; */
     position: absolute;
     top: 0;
     right: 0;
@@ -154,8 +151,6 @@
 }
 
 .scrollFE p, .scrollFELower p {
-        /* padding: 0px 10px; */
-        /* transform: translateX(-50%); */
     margin: 0;
     color: var(--main-green-color);
     opacity: 3%;
@@ -193,9 +188,7 @@
     position: relative;
     justify-content: flex-end;
     align-items: flex-end;
-    /* background-color: #F4F4F4; */
     background-color: var(--main-dark-color);
-    /* background-image: linear-gradient(to bottom left, #F4F4F4 , #cccccc ); */
 }
 
 @media screen and (max-width: 799px) {
@@ -240,8 +233,6 @@
         background-repeat: no-repeat;
         background-size: 10vh;
         background-position: top right;
-        /* flex-direction: row; */
-        /* text-align: right; */
     }
 
     .mobileSmall {
@@ -256,12 +247,10 @@
     }
 
     .image {
-        /* display: none; */
         width: 90px;
         height: 90px;
         top: -70%;
         right: -30%;
-        /* transform: translateY(-50%); */
     }
 
     .title {

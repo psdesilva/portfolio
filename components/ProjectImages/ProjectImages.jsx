@@ -6,8 +6,6 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 const ProjectImages = ({ imageArray, height, description }) => {
     const isBreakPoint = useMediaQuery(801);
 
-    const options = {}
-
     return (
         <SimpleReactLightbox>
             <SRLWrapper>

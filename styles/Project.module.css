@@ -175,7 +175,6 @@
         position: relative;
         margin-bottom: 25%;
         width: clamp(23rem, 35vw, 50rem);
-        /* aspect-ratio: 2 / 1; */
     }
 
     .section ol {
