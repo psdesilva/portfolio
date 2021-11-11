@@ -39,7 +39,7 @@ const Navigation = () => {
                             <div className={style.connectContainer}>
                                 <a href="https://github.com/psdesilva" target="_blank"><FaGithub /></a>
                                 <a href="https://www.facebook.com/chknrss" target="_blank"><FaFacebookF /></a>
-                                <a href="#"><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/in/priyanka-de-silva-b391451b2/"><FaLinkedinIn /></a>
                                 <a href="mailto:prnkdslv@gmail.com" target="_blank"><FaEnvelope /></a>
                             </div>
                         </footer>
