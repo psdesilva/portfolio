@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FaEnvelope } from 'react-icons/fa'
+import Head from 'next/head'
 import letterLeser from '../../../../writeups/LLWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
 import style from '../../../../styles/Project.module.css'
