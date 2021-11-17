@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import { BiPlusMedical } from 'react-icons/bi'
 import anatomyNow from '../../../../writeups/ANWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
@@ -16,6 +17,9 @@ export default function AnatomyNow() {
 
     return (
       <div className={style.page}>
+        <Head>
+          <title>Anatomy Now | UX | Pdesilva's Portfolio</title>
+        </Head>
         <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
             <h1>Anatomy Now</h1>
         </header>

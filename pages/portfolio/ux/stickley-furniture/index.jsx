@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import { GiSofa } from 'react-icons/gi'
 import stickley from '../../../../writeups/SFWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
@@ -16,6 +17,9 @@ export default function Stickley() {
 
     return (
       <div className={style.page}>
+        <Head>
+          <title>Stickley Furniture | UX | Pdesilva's Portfolio</title>
+        </Head>
         <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
             <h1>Stickley</h1>
         </header>

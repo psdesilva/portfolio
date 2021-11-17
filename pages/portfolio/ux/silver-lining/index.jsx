@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { SiAdobexd } from 'react-icons/si'
+import Head from 'next/head'
 import Image from 'next/image'
 import silverLining from '../../../../writeups/SLWriteUp';
 import ProjectImages from '../../../../components/ProjectImages/ProjectImages';
@@ -17,6 +17,9 @@ export default function SilverLining() {
 
     return (
       <div className={style.page}>
+        <Head>
+          <title>Silver Lining | UX | Pdesilva's Portfolio</title>
+        </Head>
         <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
             <h1>Silver Lining</h1>
         </header>

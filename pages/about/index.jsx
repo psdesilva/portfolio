@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import { FaQuestion } from 'react-icons/fa'
 import style from './About.module.css'
@@ -12,6 +13,9 @@ export default function About() {
 
     return (
       <div className={style.page}>
+        <Head>
+            <title>About | Pdesilva's Portfolio</title>
+        </Head>
         <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
             <h1>About</h1>
         </header>

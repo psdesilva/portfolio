@@ -16,6 +16,9 @@ export default function Stickley() {
 
     return (
       <div className={style.page}>
+        <Head>
+          <title>LetterLeser | UX | Pdesilva's Portfolio</title>
+        </Head>
         <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
             <h1>LetterLeser</h1>
         </header>

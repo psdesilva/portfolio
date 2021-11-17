@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import useMediaQuery from '../../hooks/MediaQuery'
 import Link from 'next/link'
 import Button from '../../components/Button/Button'
@@ -62,6 +63,9 @@ export default function Contact() {
 
   return (
     <div className={style.page}>
+      <Head>
+        <title>Contact | Pdesilva's Portfolio</title>
+      </Head>
       <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
           <h1>Contact</h1>
       </header>

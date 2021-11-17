@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import { SiAdobexd } from 'react-icons/si'
 import projects from '../../../projectlists/UXProjectList'
 import style from './Ux.module.css'
@@ -13,6 +14,9 @@ export default function Ux() {
 
     return (
       <div className={style.page}>
+        <Head>
+          <title>UX Projects | Pdesilva's Portfolio</title>
+        </Head>
         <header className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
             <h1>UX Portfolio</h1>
         </header>

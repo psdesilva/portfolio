@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import useMediaQuery from '../hooks/MediaQuery'
 import HomepageText from '../components/HomepageText/HomepageText'
 import { FaUserAlt } from 'react-icons/fa'
@@ -20,6 +21,9 @@ export default function Home() {
 
   return (
     <div className={style.page}>
+      <Head>
+        <title>Home | Pdesilva's Portfolio</title>
+      </Head>
       <div className={`${style.container} ${style.ux}`}>
         <HomepageText type="ux" loading={loading}/>
         <div className={style.scrollContainer}>
