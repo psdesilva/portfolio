@@ -21,7 +21,7 @@ export default function About() {
         </header>
         <main className={style.container}>
             <section className={style.topText}>
-                <p className={`${style.tagline} ${loading ? '' : style.taglineLoaded}`}>Hey there! My name is Priyanka and I'm a front-end developer with a background in UX Research.</p>
+                <p className={`${style.tagline} ${loading ? '' : style.taglineLoaded}`}>Hey there! My name is Priyanka and I'm a UX Designer with experience in Web Development.</p>
                 <aside className={`${style.topImage} ${loading ? '' : style.topImageLoaded}`}>
                     <Image 
                         src="/me72.jpg"
@@ -44,8 +44,8 @@ export default function About() {
                 />
             </aside>
             <section className={style.bottomText}>
-                <p className={`${style.paragraphBtm} ${loading ? '' : style.paragraphLoaded}`}>{`In January of 2020, I returned back to Sri Lanka. While I was trying to enjoy being back home, COVID-19 began its rampage. During this time, I went through a period of ups and downs and began to reconsider what I wanted to do with myself.`}</p>
-                <p className={`${style.paragraphBtm} ${loading ? '' : style.paragraphLoaded}`}>{`This was when I discovered the joy in creating websites, while creating a personal portfolio. Fueled by this new found interest, I began to learn the ins and outs of web development, and decided to follow a career in front-end development specializing in React. `}</p>
+                <p className={`${style.paragraphBtm} ${loading ? '' : style.paragraphLoaded}`}>{`In January of 2020, I returned back to Sri Lanka. While I was trying to enjoy being back home, COVID-19 began its rampage. During this time, I became restless merely sitting around and home, and decided to add web development to my repertoire of skills.`}</p>
+                <p className={`${style.paragraphBtm} ${loading ? '' : style.paragraphLoaded}`}>{`Once I was confident that this knowledge would be helpful in my pursuit of a career in UX design, I forayed into the ever-competetive job market hoping to utlize my knowledge in psychology, design and development to create pleasant and satisfying experiences for my users, clients and colleagues alike.`}</p>
             </section>
         </main>
         <footer className={`${style.background} ${loading ? '' : style.backgroundLoaded}`}>
