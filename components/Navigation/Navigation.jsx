@@ -27,8 +27,8 @@ const Navigation = () => {
                             <div className={style.portfolioContainer}>
                                 <button onClick={() => setSubMenuOpen(!subMenuOpen)} className={style.portfolio}>Portfolio <FaChevronRight className={`${style.chevron} ${subMenuOpen && style.rotated}`}/></button>
                                 <div className={`${style.subMenu} ${subMenuOpen ? style.subMenuOpen : ''}`}>
-                                    <Link href="/portfolio/web"><a className={checkCurrentPage('/portfolio/web')}>Web Development</a></Link>
                                     <Link href="/portfolio/ux"><a className={checkCurrentPage('/portfolio/ux')}>User Experience</a></Link>
+                                    <Link href="/portfolio/web"><a className={checkCurrentPage('/portfolio/web')}>Web Development</a></Link>
                                 </div>
                             </div>
                             <a href="/PdeSilva-resume.pdf" target="_blank">Resume</a>
