@@ -31,7 +31,7 @@ const Navigation = () => {
                                     <Link href="/portfolio/web"><a className={checkCurrentPage('/portfolio/web')}>Web Development</a></Link>
                                 </div>
                             </div>
-                            <a href="/PdeSilva-resume.pdf" target="_blank">Resume</a>
+                            <a href="/Resume-Priyanka.pdf" target="_blank">Resume</a>
                             <Link href="/contact"><a className={checkCurrentPage('/contact')}>Contact</a></Link>
                         </main>
                         <footer className={style.footerContainer}>
